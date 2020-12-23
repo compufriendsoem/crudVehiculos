@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+  <title>Super Coches 2021</title>
+</head>
+
+  <!-- <i class="fas fa-trash-alt"></i> -->
+  <div class="container">
+    <h1 class="text-center text-table-header mt-5">Admin Cars</h1>
+    <table class="table">
+      <thead>
+        <tr class="bg-dark">
+          <th scope="col" class="mx-2">Ref</th>
+          <th scope="col">Brand</th>
+          <th scope="col">Model</th>
+          <th scope="col">Colors</th>
+          <th scope="col">Year</th>
+          <th scope="col">Price</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="cars-body">
+        
+      </tbody>
+    </table>
+  </div>
+  <div class="container mt-5 d-flex justify-content-end">
+    <a href="#"><button id="addUser" class="bg-blue p-2 text-white" onclick="myBotton()">Add Cars</button></a>
+  </div>
+
+  <div id="addCarsBotton" class="container hiden">
+    <div class="row">
+      <div class="col-12">
+        <form id="form-reset" onsubmit="event.preventDefault(), addCars()" action="" class="d-flex">
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="ref">Ref::</label>
+              <input type="text" id="ref" class="form-width">
+            </div>
+            <div class="col-sm-6">
+              <label for="brand">Brand:</label>
+              <input type="text" id="brand" class="form-width">
+            </div>
+            <div class="col-sm-6">
+              <label for="model">Model:</label>
+              <input type="text" id="models" class="form-width">
+            </div>
+            <div class="col-sm-6 mt-2">
+              <label for="color">Color:</label>
+              <input type="text" id="color" class="form-width">
+            </div>
+            <div class="col-sm-6 mt-2">
+              <label for="year">Year:</label>
+              <input type="text" id="year" class="form-width">
+            </div>
+            <div class="col-sm-6 mt-2">
+              <label for="price">Price</label>
+              <input type="text" id="price" class="form-width">
+            </div>
+            <div class="col-sm-12 mt-2">
+              <label for="price">Send Request</label>
+              <button type="submit" id="send" class="bg-blue p-2 text-white container">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/cars.js"></script>
+</body>
+</html>
