@@ -1,7 +1,7 @@
 // Marca, Modelo, Color, Año, Precio
 let concessionaire = [
   {
-    id: "car1",
+    id: 1,
     brand:"Toyota",
     models: "picanto",
     color: "white",
@@ -9,7 +9,7 @@ let concessionaire = [
     price: 80000000
   },
   {
-    id: "car2",
+    id: 2,
     brand:"Renault",
     models: "hehey",
     color: "bluelight",
@@ -17,7 +17,7 @@ let concessionaire = [
     price: 8500000
   },
   {
-    id: "car3",
+    id: 3,
     brand:"Nissan",
     models: "Versa",
     color: "blacklight",
@@ -25,7 +25,7 @@ let concessionaire = [
     price: 50000000
   },
   {
-    id: "car4",
+    id: 4,
     brand:"Nissan",
     models: "Tidda",
     color: "bluelight",
@@ -33,7 +33,7 @@ let concessionaire = [
     price: 160000000
   },
   {
-    id: "car5",
+    id: 5,
     brand:"Nissan",
     models: "March",
     color: "silver",
@@ -41,6 +41,9 @@ let concessionaire = [
     price: 250000000
   }
 ]
+function myBotton(){
+  document.getElementById('addCarsBotton').classList.toggle('hiden')
+}
 
 function printCars(){
   // donde quiero mostrar los elementos de mi tabla
@@ -95,8 +98,6 @@ function addCars(id) {
   document.getElementById('form-reset').request();
 } 
 
-function myBotton(){
-  document.getElementById('addCarsBotton').classList.toggle('hiden')
-}
+
 
 printCars();
