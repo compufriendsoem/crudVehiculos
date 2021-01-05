@@ -75,6 +75,8 @@ function deleteCars(id){
   printCars();
 }
 
+
+
 function addCars(id) {
   // obtener el valor del input
   // agregar el usuario al arreglo
@@ -93,6 +95,7 @@ function addCars(id) {
     year: myYear,
     price: myPrice
   }
+  
   concessionaire.push(vehiCars);
   printCars();
   document.getElementById('form-reset').request();
